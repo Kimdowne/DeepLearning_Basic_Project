@@ -1,0 +1,49 @@
+{
+    "sourceDataInfo": {
+        "newsID": "SO_M06_902186",
+        "newsCategory": "사회",
+        "newsSubcategory": "사회,사건사고,사건사고",
+        "newsTitle": "직원 때려 숨지게 한 어린이 스포츠센터 대표 긴급체포",
+        "newsSubTitle": "null",
+        "newsContent": "서울의 한 어린이 스포츠센터 대표가 만취 상태로 직원을 숨지게 한 사건이 발생해 경찰이 수사에 나섰다.\n31일 경찰에 따르면 서울 서대문경찰서는 폭행치사 혐의로 어린이 스포츠센터 대표 40대 A씨를 긴급체포했다.\nA씨는 자신이 대표로 있는 센터 직원 20대 B씨를 때려 숨지게 한 혐의를 받는다.\nA씨는 이날 오전 9시 5분께 “자고 일어나니 B씨가 의식이 없다”며 119에 신고했다.\nA씨는 현장에 도착한 경찰에 “B씨와 같이 술을 마셨는데 B씨가 음주운전을 하려 해 말리려다 폭행했다”고 진술한 것으로 전해졌다.\n경찰은 A씨에 대한 구속영장을 신청할 방침이다.",
+        "partNum": "P2",
+        "useType": 1,
+        "processType": "A",
+        "processPattern": "00",
+        "processLevel": "하",
+        "sentenceCount": 6,
+        "processSentencenum": 0,
+        "sentenceInfo": [
+            {
+                "sentenceNo": 1,
+                "sentenceContent": "서울의 한 어린이 스포츠센터 대표가 만취 상태로 직원을 숨지게 한 사건이 발생해 경찰이 수사에 나섰다.",
+                "sentenceSize": 57
+            },
+            {
+                "sentenceNo": 2,
+                "sentenceContent": "31일 경찰에 따르면 서울 서대문경찰서는 폭행치사 혐의로 어린이 스포츠센터 대표 40대 A씨를 긴급체포했다.",
+                "sentenceSize": 60
+            },
+            {
+                "sentenceNo": 3,
+                "sentenceContent": "A씨는 자신이 대표로 있는 센터 직원 20대 B씨를 때려 숨지게 한 혐의를 받는다.",
+                "sentenceSize": 46
+            },
+            {
+                "sentenceNo": 4,
+                "sentenceContent": "A씨는 이날 오전 9시 5분께 “자고 일어나니 B씨가 의식이 없다”며 119에 신고했다.",
+                "sentenceSize": 49
+            },
+            {
+                "sentenceNo": 5,
+                "sentenceContent": "A씨는 현장에 도착한 경찰에 “B씨와 같이 술을 마셨는데 B씨가 음주운전을 하려 해 말리려다 폭행했다”고 진술한 것으로 전해졌다.",
+                "sentenceSize": 72
+            },
+            {
+                "sentenceNo": 6,
+                "sentenceContent": "경찰은 A씨에 대한 구속영장을 신청할 방침이다.",
+                "sentenceSize": 26
+            }
+        ]
+    }
+}

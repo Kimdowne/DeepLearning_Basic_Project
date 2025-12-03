@@ -1,0 +1,49 @@
+{
+    "sourceDataInfo": {
+        "newsID": "SO_M06_902078",
+        "newsCategory": "사회",
+        "newsSubcategory": "사회,사회일반,사회일반",
+        "newsTitle": "지인에게 유리컵 던지고 경찰에 저항한 20대, 테이저건 맞고 체포",
+        "newsSubTitle": "null",
+        "newsContent": "지인과 술을 먹다가 유리컵을 던지며 폭행을 저지른 혐의를 받는 20대 남성이 경찰에 검거됐다.\n서울 관악경찰서는 20대 남성 A씨를 특수폭행과 공무집행방해 혐의로 현행범 체포해 조사 중이라고 30일 밝혔다.\nA씨는 이날 오전 2시 30분께 서울 관악구 신림동의 한 원룸에서 여성 지인과 술을 마시다가 유리컵을 바닥에 던지는 등 폭행한 혐의를 받는다.\n경찰이 현장에 출동하자 A씨는 경찰에도 저항하는 등 난동을 부렸던 것으로 확인됐다.\n이에 경찰은 테이저건을 쏴 A씨를 제압했다.\n경찰 관계자는 \\\"자세한 사건 경위에 대해 조사 중\\\"이라고 말했다.",
+        "partNum": "P2",
+        "useType": 1,
+        "processType": "A",
+        "processPattern": "00",
+        "processLevel": "하",
+        "sentenceCount": 6,
+        "processSentencenum": 0,
+        "sentenceInfo": [
+            {
+                "sentenceNo": 1,
+                "sentenceContent": "지인과 술을 먹다가 유리컵을 던지며 폭행을 저지른 혐의를 받는 20대 남성이 경찰에 검거됐다.",
+                "sentenceSize": 52
+            },
+            {
+                "sentenceNo": 2,
+                "sentenceContent": "서울 관악경찰서는 20대 남성 A씨를 특수폭행과 공무집행방해 혐의로 현행범 체포해 조사 중이라고 30일 밝혔다.",
+                "sentenceSize": 62
+            },
+            {
+                "sentenceNo": 3,
+                "sentenceContent": "A씨는 이날 오전 2시 30분께 서울 관악구 신림동의 한 원룸에서 여성 지인과 술을 마시다가 유리컵을 바닥에 던지는 등 폭행한 혐의를 받는다.",
+                "sentenceSize": 79
+            },
+            {
+                "sentenceNo": 4,
+                "sentenceContent": "경찰이 현장에 출동하자 A씨는 경찰에도 저항하는 등 난동을 부렸던 것으로 확인됐다.",
+                "sentenceSize": 46
+            },
+            {
+                "sentenceNo": 5,
+                "sentenceContent": "이에 경찰은 테이저건을 쏴 A씨를 제압했다.",
+                "sentenceSize": 24
+            },
+            {
+                "sentenceNo": 6,
+                "sentenceContent": "경찰 관계자는 \\\"자세한 사건 경위에 대해 조사 중\\\"이라고 말했다.",
+                "sentenceSize": 38
+            }
+        ]
+    }
+}

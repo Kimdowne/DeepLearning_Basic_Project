@@ -1,0 +1,54 @@
+{
+    "sourceDataInfo": {
+        "newsID": "SO_M06_902224",
+        "newsCategory": "사회",
+        "newsSubcategory": "사회,전국,영남권",
+        "newsTitle": "울산시, 중소기업 청년 600명에 1인당 100만원 지원",
+        "newsSubTitle": "1월 3일~10일 신청 접수",
+        "newsContent": "울산시는 중소기업의 재직 청년 근로자들의 복지향상과 장기근속을 지원하기 위해 ‘2022년 울산청년 행복지원 사업’을 추진한다고 2일 밝혔다.\n대상은 2020년 1월 1일 이후 울산지역 중소기업 신입 청년 근로자다.\n자격 조건은 울산 거주 만 19~39세, 기준중위소득 150% 이하, 4대 보험 가입, 해당 중소기업 3개월 이상 근속 등이다.\n올해는 2021년 지역주도형 청년일자리사업 참여자를 우선 지원한다.\n지원 인원은 600명으로 지난해보다 확대했으며, 1인당 100만 원씩 울산페이로 지원한다. 1월 400명, 7월 200명 2회 모집할 예정이다.\n1차 대상은 1월 3일부터 10일까지 접수한다.\n일자리창업정보센터 및 울산일자리재단 공고문을 참고해 전자우편으로 제출하면 된다.",
+        "partNum": "P2",
+        "useType": 1,
+        "processType": "A",
+        "processPattern": "00",
+        "processLevel": "하",
+        "sentenceCount": 7,
+        "processSentencenum": 0,
+        "sentenceInfo": [
+            {
+                "sentenceNo": 1,
+                "sentenceContent": "울산시는 중소기업의 재직 청년 근로자들의 복지향상과 장기근속을 지원하기 위해 ‘2022년 울산청년 행복지원 사업’을 추진한다고 2일 밝혔다.",
+                "sentenceSize": 78
+            },
+            {
+                "sentenceNo": 2,
+                "sentenceContent": "대상은 2020년 1월 1일 이후 울산지역 중소기업 신입 청년 근로자다.",
+                "sentenceSize": 40
+            },
+            {
+                "sentenceNo": 3,
+                "sentenceContent": "자격 조건은 울산 거주 만 19~39세, 기준중위소득 150% 이하, 4대 보험 가입, 해당 중소기업 3개월 이상 근속 등이다.",
+                "sentenceSize": 71
+            },
+            {
+                "sentenceNo": 4,
+                "sentenceContent": "올해는 2021년 지역주도형 청년일자리사업 참여자를 우선 지원한다.",
+                "sentenceSize": 37
+            },
+            {
+                "sentenceNo": 5,
+                "sentenceContent": "지원 인원은 600명으로 지난해보다 확대했으며, 1인당 100만 원씩 울산페이로 지원한다. 1월 400명, 7월 200명 2회 모집할 예정이다.",
+                "sentenceSize": 80
+            },
+            {
+                "sentenceNo": 6,
+                "sentenceContent": "1차 대상은 1월 3일부터 10일까지 접수한다.",
+                "sentenceSize": 26
+            },
+            {
+                "sentenceNo": 7,
+                "sentenceContent": "일자리창업정보센터 및 울산일자리재단 공고문을 참고해 전자우편으로 제출하면 된다.",
+                "sentenceSize": 44
+            }
+        ]
+    }
+}

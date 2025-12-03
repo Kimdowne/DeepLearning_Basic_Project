@@ -1,0 +1,54 @@
+{
+    "sourceDataInfo": {
+        "newsID": "SO_M06_902383",
+        "newsCategory": "사회",
+        "newsSubcategory": "사회,행정·지자체,행정",
+        "newsTitle": "종로구, 평창동에 전기차 급속 충전소 설치",
+        "newsSubTitle": "null",
+        "newsContent": "서울 종로구가 평창동에 전기차 급속충전소를 구축했다고 3일 밝혔다.\n새로 만들어진 평창동 전기차 충전소는 200kW(킬로와트)급으로 20분이면 80%까지 급속 충전이 가능하며 2대를 동시에 충전할 수도 있다.\n이용자 제한 없이 24시간 개방한다.\n구는 방치돼 있던 평창동 43-5의 소규모 공간에 충전기 설치가 가능하도록 공유재산 용도 변경 및 영구 축조물 축조 심의 등 절차를 거쳐 지난해 11월 토지 정리 공사를 시작했다.\n이어 충전기 부속 시설, 보행자를 위한 안전시설 등 설치에 이어 전기안전검사까지 충전소 구축 공사를 지난달 마무리했다.\n평창동은 그동안 근처에 공공 충전기가 없어 전기차 이용 주민들의 불편이 많았다.\n게다가 단독주택이나 소규모 공동주택이 많아 충전소를 지을 만한 공간도 마땅치 않았다.",
+        "partNum": "P2",
+        "useType": 1,
+        "processType": "A",
+        "processPattern": "00",
+        "processLevel": "하",
+        "sentenceCount": 7,
+        "processSentencenum": 0,
+        "sentenceInfo": [
+            {
+                "sentenceNo": 1,
+                "sentenceContent": "서울 종로구가 평창동에 전기차 급속충전소를 구축했다고 3일 밝혔다.",
+                "sentenceSize": 37
+            },
+            {
+                "sentenceNo": 2,
+                "sentenceContent": "새로 만들어진 평창동 전기차 충전소는 200kW(킬로와트)급으로 20분이면 80%까지 급속 충전이 가능하며 2대를 동시에 충전할 수도 있다.",
+                "sentenceSize": 78
+            },
+            {
+                "sentenceNo": 3,
+                "sentenceContent": "이용자 제한 없이 24시간 개방한다.",
+                "sentenceSize": 20
+            },
+            {
+                "sentenceNo": 4,
+                "sentenceContent": "구는 방치돼 있던 평창동 43-5의 소규모 공간에 충전기 설치가 가능하도록 공유재산 용도 변경 및 영구 축조물 축조 심의 등 절차를 거쳐 지난해 11월 토지 정리 공사를 시작했다.",
+                "sentenceSize": 100
+            },
+            {
+                "sentenceNo": 5,
+                "sentenceContent": "이어 충전기 부속 시설, 보행자를 위한 안전시설 등 설치에 이어 전기안전검사까지 충전소 구축 공사를 지난달 마무리했다.",
+                "sentenceSize": 66
+            },
+            {
+                "sentenceNo": 6,
+                "sentenceContent": "평창동은 그동안 근처에 공공 충전기가 없어 전기차 이용 주민들의 불편이 많았다.",
+                "sentenceSize": 44
+            },
+            {
+                "sentenceNo": 7,
+                "sentenceContent": "게다가 단독주택이나 소규모 공동주택이 많아 충전소를 지을 만한 공간도 마땅치 않았다.",
+                "sentenceSize": 47
+            }
+        ]
+    }
+}

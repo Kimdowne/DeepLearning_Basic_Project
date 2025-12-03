@@ -1,0 +1,89 @@
+{
+    "sourceDataInfo": {
+        "newsID": "SO_M06_902270",
+        "newsCategory": "사회",
+        "newsSubcategory": "사회,전국,영남권",
+        "newsTitle": "울산, 어린이집·유치원·초등학교 감염 확산…밤사이 13명 추가",
+        "newsSubTitle": "어린이집·유치원·초등학교 관련 4명 추가감염경로 불분명 5명·해외 입국 1명 등",
+        "newsContent": "울산에서 어린이집과 유치원, 초등학교 등을 중심으로 코로나19가 확산하고 있다.\n울산시는 밤사이(2일 오후 6시~3일 오전 10시) 코로나19 확진자가 13명 발생했다고 밝혔다.\n신규 확진자를 감염자 집단으로 보면 동구의 한 어린이집 관련 확진자가 2명 추가됐다.\n이 어린이집은 지난달 23일 첫 확진자 발생 이후 어린이집 내 21명, 가족 15명, 기타 3명이 감염됐다.\n누적 39명째다.\n울주군의 유치원어린이집도 1명 추가돼 누적 18명이 됐다.\n어린이집 11명, 가족 6명, 기타 1명이다.\n북구 초등학교 관련 확진자도 1명 추가돼 누적 48명이 됐다.\n이 학교는 지난달 23일 첫 확진자 발생 이후 현재까지 교내 29명, 가족 19명, 기타 1명이 감염됐다.\n나머지 9명 중 5명은 감염경로가 불분명한 확진자다. 3명은 기존 확진자의 개별 접촉자다.\n1명은 지난 1일 캐나다에서 입국한 해외 감염자다.\n구·군별 확진자 수는 남구 4명, 울주군 4명, 동구 3명, 중구 1명, 북구 1명이다.\n이들은 울산 7020~7032번으로 지정됐다.\n울산시는 신규 확진자의 거주지를 방역 소독하고, 추가 이동동선과 접촉자를 파악하는 등 역학조사를 벌이고 있다.",
+        "partNum": "P2",
+        "useType": 1,
+        "processType": "A",
+        "processPattern": "00",
+        "processLevel": "하",
+        "sentenceCount": 14,
+        "processSentencenum": 0,
+        "sentenceInfo": [
+            {
+                "sentenceNo": 1,
+                "sentenceContent": "울산에서 어린이집과 유치원, 초등학교 등을 중심으로 코로나19가 확산하고 있다.",
+                "sentenceSize": 44
+            },
+            {
+                "sentenceNo": 2,
+                "sentenceContent": "울산시는 밤사이(2일 오후 6시~3일 오전 10시) 코로나19 확진자가 13명 발생했다고 밝혔다.",
+                "sentenceSize": 54
+            },
+            {
+                "sentenceNo": 3,
+                "sentenceContent": "신규 확진자를 감염자 집단으로 보면 동구의 한 어린이집 관련 확진자가 2명 추가됐다.",
+                "sentenceSize": 47
+            },
+            {
+                "sentenceNo": 4,
+                "sentenceContent": "이 어린이집은 지난달 23일 첫 확진자 발생 이후 어린이집 내 21명, 가족 15명, 기타 3명이 감염됐다.",
+                "sentenceSize": 60
+            },
+            {
+                "sentenceNo": 5,
+                "sentenceContent": "누적 39명째다.",
+                "sentenceSize": 9
+            },
+            {
+                "sentenceNo": 6,
+                "sentenceContent": "울주군의 유치원어린이집도 1명 추가돼 누적 18명이 됐다.",
+                "sentenceSize": 32
+            },
+            {
+                "sentenceNo": 7,
+                "sentenceContent": "어린이집 11명, 가족 6명, 기타 1명이다.",
+                "sentenceSize": 25
+            },
+            {
+                "sentenceNo": 8,
+                "sentenceContent": "북구 초등학교 관련 확진자도 1명 추가돼 누적 48명이 됐다.",
+                "sentenceSize": 34
+            },
+            {
+                "sentenceNo": 9,
+                "sentenceContent": "이 학교는 지난달 23일 첫 확진자 발생 이후 현재까지 교내 29명, 가족 19명, 기타 1명이 감염됐다.",
+                "sentenceSize": 59
+            },
+            {
+                "sentenceNo": 10,
+                "sentenceContent": "나머지 9명 중 5명은 감염경로가 불분명한 확진자다. 3명은 기존 확진자의 개별 접촉자다.",
+                "sentenceSize": 50
+            },
+            {
+                "sentenceNo": 11,
+                "sentenceContent": "1명은 지난 1일 캐나다에서 입국한 해외 감염자다.",
+                "sentenceSize": 28
+            },
+            {
+                "sentenceNo": 12,
+                "sentenceContent": "구·군별 확진자 수는 남구 4명, 울주군 4명, 동구 3명, 중구 1명, 북구 1명이다.",
+                "sentenceSize": 49
+            },
+            {
+                "sentenceNo": 13,
+                "sentenceContent": "이들은 울산 7020~7032번으로 지정됐다.",
+                "sentenceSize": 25
+            },
+            {
+                "sentenceNo": 14,
+                "sentenceContent": "울산시는 신규 확진자의 거주지를 방역 소독하고, 추가 이동동선과 접촉자를 파악하는 등 역학조사를 벌이고 있다.",
+                "sentenceSize": 61
+            }
+        ]
+    }
+}

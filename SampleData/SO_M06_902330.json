@@ -1,0 +1,69 @@
+{
+    "sourceDataInfo": {
+        "newsID": "SO_M06_902330",
+        "newsCategory": "사회",
+        "newsSubcategory": "사회,전국,호남권",
+        "newsTitle": "'군부대·경찰관서·학교 등서 코로나 지속'...광주 61명·전남 46명 확진",
+        "newsSubTitle": "null",
+        "newsContent": "광주와 전남에서 군부대와 경찰관서, 초등학교 등을 중심으로 코로나19 확진자가 지속하고 있다.\n4일 광주시에 따르면 전날 하루에 61명이 추가로 확진됐다.\n서구 소재 공공기관과 경찰서 지구대에서 확진자가 각각 발생해 역학조사를 하고 있다.\n기존에 확진자가 발생해 전수검사를 했던 초등학교 4곳에서도 추가 확진자가 발생했다.\n광산구 소재 초등학교에서 4명, 남구 소재 초등학교 2명, 광산구 소재 또 다른 초등학교 1명, 서구 소재 초등학교 1명 등이다.\n전남에서는 전날 46명이 추가로 확진 판정을 받았다.\n지역별로 보면 목포 12명, 영광 9명, 무안 6명, 여수·순천·광양 각 4명, 장성 2명, 나주·고흥·화순·해남·영암 각 1명이 감염됐다.\n영광의 한 육군부대에서는 지난 2일 확진자 1명이 나온 후 전수검사를 통해 지난 3일 7명이 추가로 확진됐다.\n22명은 광주·전남 기존 확진자와 접촉한 사례로 파악됐으며 4명은 해외 입국 환자였다.\n13명은 감염 경로가 확인되지 않아 방역 당국이 역학 조사를 진행 중이다.",
+        "partNum": "P2",
+        "useType": 1,
+        "processType": "A",
+        "processPattern": "00",
+        "processLevel": "하",
+        "sentenceCount": 10,
+        "processSentencenum": 0,
+        "sentenceInfo": [
+            {
+                "sentenceNo": 1,
+                "sentenceContent": "광주와 전남에서 군부대와 경찰관서, 초등학교 등을 중심으로 코로나19 확진자가 지속하고 있다.",
+                "sentenceSize": 52
+            },
+            {
+                "sentenceNo": 2,
+                "sentenceContent": "4일 광주시에 따르면 전날 하루에 61명이 추가로 확진됐다.",
+                "sentenceSize": 33
+            },
+            {
+                "sentenceNo": 3,
+                "sentenceContent": "서구 소재 공공기관과 경찰서 지구대에서 확진자가 각각 발생해 역학조사를 하고 있다.",
+                "sentenceSize": 46
+            },
+            {
+                "sentenceNo": 4,
+                "sentenceContent": "기존에 확진자가 발생해 전수검사를 했던 초등학교 4곳에서도 추가 확진자가 발생했다.",
+                "sentenceSize": 46
+            },
+            {
+                "sentenceNo": 5,
+                "sentenceContent": "광산구 소재 초등학교에서 4명, 남구 소재 초등학교 2명, 광산구 소재 또 다른 초등학교 1명, 서구 소재 초등학교 1명 등이다.",
+                "sentenceSize": 72
+            },
+            {
+                "sentenceNo": 6,
+                "sentenceContent": "전남에서는 전날 46명이 추가로 확진 판정을 받았다.",
+                "sentenceSize": 29
+            },
+            {
+                "sentenceNo": 7,
+                "sentenceContent": "지역별로 보면 목포 12명, 영광 9명, 무안 6명, 여수·순천·광양 각 4명, 장성 2명, 나주·고흥·화순·해남·영암 각 1명이 감염됐다.",
+                "sentenceSize": 78
+            },
+            {
+                "sentenceNo": 8,
+                "sentenceContent": "영광의 한 육군부대에서는 지난 2일 확진자 1명이 나온 후 전수검사를 통해 지난 3일 7명이 추가로 확진됐다.",
+                "sentenceSize": 61
+            },
+            {
+                "sentenceNo": 9,
+                "sentenceContent": "22명은 광주·전남 기존 확진자와 접촉한 사례로 파악됐으며 4명은 해외 입국 환자였다.",
+                "sentenceSize": 48
+            },
+            {
+                "sentenceNo": 10,
+                "sentenceContent": "13명은 감염 경로가 확인되지 않아 방역 당국이 역학 조사를 진행 중이다.",
+                "sentenceSize": 41
+            }
+        ]
+    }
+}

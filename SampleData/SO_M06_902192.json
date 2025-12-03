@@ -1,0 +1,54 @@
+{
+    "sourceDataInfo": {
+        "newsID": "SO_M06_902192",
+        "newsCategory": "사회",
+        "newsSubcategory": "사회,사회일반,사회일반",
+        "newsTitle": "[오늘의 날씨] 임인년 첫날에도 계속되는 강추위…서울 아침 영하 10도",
+        "newsSubTitle": "null",
+        "newsContent": "2022년의 첫날인 오늘 전국의 아침 최저기온이 영하권에 머무는 등 매서운 한파가 이어지겠다.\n일부 남부 내륙에는 아침 기온이 ?10도 이하로 내려가는 곳이 많겠다.\n경기 북부와 강원 내륙·산지는 ?15도 이하로 떨어지는 곳도 있겠다.\n오후부터는 기온이 평년 수준을 회복하며 추위는 점차 누그러질 전망이다.\n아침 최저기온은 ?16~-3도, 낮 최고기온은 1~8도로 예보됐다.\n미세먼지 농도는 원활한 대기 확산의 영향으로 전 권역이 ‘좋음’~‘보통’ 수준으로 보이겠다.\n다만 새벽부터 아침 사이 충청 내륙과 전라 내륙에는 가시거리 1㎞ 미만의 안개가 끼는 곳이 있겠으니 교통안전에 유의해야 한다.",
+        "partNum": "P2",
+        "useType": 1,
+        "processType": "A",
+        "processPattern": "00",
+        "processLevel": "하",
+        "sentenceCount": 7,
+        "processSentencenum": 0,
+        "sentenceInfo": [
+            {
+                "sentenceNo": 1,
+                "sentenceContent": "2022년의 첫날인 오늘 전국의 아침 최저기온이 영하권에 머무는 등 매서운 한파가 이어지겠다.",
+                "sentenceSize": 52
+            },
+            {
+                "sentenceNo": 2,
+                "sentenceContent": "일부 남부 내륙에는 아침 기온이 ?10도 이하로 내려가는 곳이 많겠다.",
+                "sentenceSize": 39
+            },
+            {
+                "sentenceNo": 3,
+                "sentenceContent": "경기 북부와 강원 내륙·산지는 ?15도 이하로 떨어지는 곳도 있겠다.",
+                "sentenceSize": 38
+            },
+            {
+                "sentenceNo": 4,
+                "sentenceContent": "오후부터는 기온이 평년 수준을 회복하며 추위는 점차 누그러질 전망이다.",
+                "sentenceSize": 39
+            },
+            {
+                "sentenceNo": 5,
+                "sentenceContent": "아침 최저기온은 ?16~-3도, 낮 최고기온은 1~8도로 예보됐다.",
+                "sentenceSize": 37
+            },
+            {
+                "sentenceNo": 6,
+                "sentenceContent": "미세먼지 농도는 원활한 대기 확산의 영향으로 전 권역이 ‘좋음’~‘보통’ 수준으로 보이겠다.",
+                "sentenceSize": 51
+            },
+            {
+                "sentenceNo": 7,
+                "sentenceContent": "다만 새벽부터 아침 사이 충청 내륙과 전라 내륙에는 가시거리 1㎞ 미만의 안개가 끼는 곳이 있겠으니 교통안전에 유의해야 한다.",
+                "sentenceSize": 70
+            }
+        ]
+    }
+}

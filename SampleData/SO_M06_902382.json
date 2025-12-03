@@ -1,0 +1,54 @@
+{
+    "sourceDataInfo": {
+        "newsID": "SO_M06_902382",
+        "newsCategory": "사회",
+        "newsSubcategory": "사회,행정·지자체,행정",
+        "newsTitle": "노원구 치매안심공원 '당현천 기억길' 조성",
+        "newsSubTitle": "null",
+        "newsContent": "서울 노원구가 상계6·7동 근처 당현천 산책로 200m 구간에 치매 안심 공원 ‘당현천 기억길’을 조성했다고 4일 밝혔다.\n고령화로 늘어나고 있는 노인성 질환인 치매 환자를 위한 사업이다.\n공원 입구에는 기억길을 알리는 간판을 설치했고 산책로 중간에는 치매안심센터 로고를 활용한 힐링 벤치를 마련했다.\n기억길에는 치매 예방 및 어르신 인지력 향상을 위한 안내판 10개를 설치했다.\n안내판은 치매의 원인과 종류, 진단 및 치료 방법, 예방 수칙과 같은 기본적인 건강 정보를 제공한다.\n간단한 문장 완성, 기억력 테스트 등 관심과 흥미를 유발하는 내용도 있다.\n구는 앞으로 기억길을 활용해 유관기관과 연계한 노인 운동 프로그램을 운영하고 치매 관련 캠페인을 주기적으로 실시할 계획이다.",
+        "partNum": "P2",
+        "useType": 1,
+        "processType": "A",
+        "processPattern": "00",
+        "processLevel": "하",
+        "sentenceCount": 7,
+        "processSentencenum": 0,
+        "sentenceInfo": [
+            {
+                "sentenceNo": 1,
+                "sentenceContent": "서울 노원구가 상계6·7동 근처 당현천 산책로 200m 구간에 치매 안심 공원 ‘당현천 기억길’을 조성했다고 4일 밝혔다.",
+                "sentenceSize": 68
+            },
+            {
+                "sentenceNo": 2,
+                "sentenceContent": "고령화로 늘어나고 있는 노인성 질환인 치매 환자를 위한 사업이다.",
+                "sentenceSize": 36
+            },
+            {
+                "sentenceNo": 3,
+                "sentenceContent": "공원 입구에는 기억길을 알리는 간판을 설치했고 산책로 중간에는 치매안심센터 로고를 활용한 힐링 벤치를 마련했다.",
+                "sentenceSize": 62
+            },
+            {
+                "sentenceNo": 4,
+                "sentenceContent": "기억길에는 치매 예방 및 어르신 인지력 향상을 위한 안내판 10개를 설치했다.",
+                "sentenceSize": 43
+            },
+            {
+                "sentenceNo": 5,
+                "sentenceContent": "안내판은 치매의 원인과 종류, 진단 및 치료 방법, 예방 수칙과 같은 기본적인 건강 정보를 제공한다.",
+                "sentenceSize": 56
+            },
+            {
+                "sentenceNo": 6,
+                "sentenceContent": "간단한 문장 완성, 기억력 테스트 등 관심과 흥미를 유발하는 내용도 있다.",
+                "sentenceSize": 41
+            },
+            {
+                "sentenceNo": 7,
+                "sentenceContent": "구는 앞으로 기억길을 활용해 유관기관과 연계한 노인 운동 프로그램을 운영하고 치매 관련 캠페인을 주기적으로 실시할 계획이다.",
+                "sentenceSize": 69
+            }
+        ]
+    }
+}

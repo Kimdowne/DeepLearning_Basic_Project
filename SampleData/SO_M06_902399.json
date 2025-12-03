@@ -1,0 +1,69 @@
+{
+    "sourceDataInfo": {
+        "newsID": "SO_M06_902399",
+        "newsCategory": "사회",
+        "newsSubcategory": "사회,사회일반,사회일반",
+        "newsTitle": "인천 '24시간 돌봄' 어린이집서 2살배기 원생 사망",
+        "newsSubTitle": "경찰, 어린이집 CCTV 조사 예정",
+        "newsContent": "인천의 한 어린이집에서 생후 13개월 된 원생이 숨진 채 발견돼 경찰이 수사에 나섰다.\n4일 인천경찰청 여성청소년수사대에 따르면 이날 오전 6시 19분께 인천시 남동구 모 어린이집 원장실에서 잠들어 있던 원생 A(2)군이 숨을 쉬지 않는 것을 보육교사가 발견해 119에 신고했다.\nA군은 119 구급대가 현장에 도착했을 당시 이미 심정지 상태로 근육이 딱딱하게 굳는 사후 강직도 나타났던 것으로 파악됐다.\nA군에게서 별다른 외상은 발견되지 않았다.\n조사 결과 A군은 24시간 돌봄 서비스를 제공하는 이 어린이집에서 전날 저녁 잠든 것으로 확인됐다.\n그가 자고 있던 원장실에는 또래 원생 1명과 보육교사 1명이 함께 있었다.\n이 보육교사는 경찰 조사에서 \\\"어제 저녁 아이를 재웠는데 아침에 일어나 보니 이미 숨을 쉬지 않는 상태였다\\\"고 진술했다.\nA군은 한부모 가정 자녀로, 평일에는 어린이집의 돌봄 서비스를 이용했으며 주말에만 할머니와 아버지 등 가족과 생활한 것으로 조사됐다.\n경찰은 A군의 정확한 사망 원인을 파악하기 위해 국립과학수사연구원에 부검을 의뢰한 상태다.\n또 어린이집 내 폐쇄회로(CC)TV를 확인해 A군이 숨질 당시 정황을 구체적으로 파악할 방침이다.",
+        "partNum": "P2",
+        "useType": 1,
+        "processType": "A",
+        "processPattern": "00",
+        "processLevel": "하",
+        "sentenceCount": 10,
+        "processSentencenum": 0,
+        "sentenceInfo": [
+            {
+                "sentenceNo": 1,
+                "sentenceContent": "인천의 한 어린이집에서 생후 13개월 된 원생이 숨진 채 발견돼 경찰이 수사에 나섰다.",
+                "sentenceSize": 48
+            },
+            {
+                "sentenceNo": 2,
+                "sentenceContent": "4일 인천경찰청 여성청소년수사대에 따르면 이날 오전 6시 19분께 인천시 남동구 모 어린이집 원장실에서 잠들어 있던 원생 A(2)군이 숨을 쉬지 않는 것을 보육교사가 발견해 119에 신고했다.",
+                "sentenceSize": 107
+            },
+            {
+                "sentenceNo": 3,
+                "sentenceContent": "A군은 119 구급대가 현장에 도착했을 당시 이미 심정지 상태로 근육이 딱딱하게 굳는 사후 강직도 나타났던 것으로 파악됐다.",
+                "sentenceSize": 69
+            },
+            {
+                "sentenceNo": 4,
+                "sentenceContent": "A군에게서 별다른 외상은 발견되지 않았다.",
+                "sentenceSize": 23
+            },
+            {
+                "sentenceNo": 5,
+                "sentenceContent": "조사 결과 A군은 24시간 돌봄 서비스를 제공하는 이 어린이집에서 전날 저녁 잠든 것으로 확인됐다.",
+                "sentenceSize": 55
+            },
+            {
+                "sentenceNo": 6,
+                "sentenceContent": "그가 자고 있던 원장실에는 또래 원생 1명과 보육교사 1명이 함께 있었다.",
+                "sentenceSize": 41
+            },
+            {
+                "sentenceNo": 7,
+                "sentenceContent": "이 보육교사는 경찰 조사에서 \\\"어제 저녁 아이를 재웠는데 아침에 일어나 보니 이미 숨을 쉬지 않는 상태였다\\\"고 진술했다.",
+                "sentenceSize": 69
+            },
+            {
+                "sentenceNo": 8,
+                "sentenceContent": "A군은 한부모 가정 자녀로, 평일에는 어린이집의 돌봄 서비스를 이용했으며 주말에만 할머니와 아버지 등 가족과 생활한 것으로 조사됐다.",
+                "sentenceSize": 74
+            },
+            {
+                "sentenceNo": 9,
+                "sentenceContent": "경찰은 A군의 정확한 사망 원인을 파악하기 위해 국립과학수사연구원에 부검을 의뢰한 상태다.",
+                "sentenceSize": 50
+            },
+            {
+                "sentenceNo": 10,
+                "sentenceContent": "또 어린이집 내 폐쇄회로(CC)TV를 확인해 A군이 숨질 당시 정황을 구체적으로 파악할 방침이다.",
+                "sentenceSize": 54
+            }
+        ]
+    }
+}

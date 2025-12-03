@@ -1,0 +1,64 @@
+{
+    "sourceDataInfo": {
+        "newsID": "SO_M06_902187",
+        "newsCategory": "사회",
+        "newsSubcategory": "사회,사건사고,사건사고",
+        "newsTitle": "기둥 부서지고 지반 침하…고양 마두역 인근 건물 붕괴위험",
+        "newsSubTitle": "null",
+        "newsContent": "경기 고양시 마두역 인근 건물의 붕괴 위험으로 내부 사람들과 인근 주민들이 긴급 대피했다.\n31일 오전 경기 고양시 마두역 인근 상가건물에서 지하 3층 주차장의 기둥이 파열되며 건물 인근 도로가 내려앉아 상가 입주민들이 긴급대피했다.\n인명피해는 발생하지 않았지만 건물 붕괴 위험성을 배제할 수 없어 유관 기관이 현장 상황을 점검 중이다.\n고양시 등에 따르면 이날 사고는 오전 11시 34분께 신고됐다.\n신고 접수 즉시 관리사무소 측에서 안내 방송을 해 상가 입주민 60여명이 긴급대피했다.\n경찰과 소방 당국은 현장에 출동해 미처 대피하지 못한 인원 여부를 파악하고 폴리스 라인을 만들어 현장 주변을 통제하고 있다.\n고양시는 한전, 지역난방공사 등 유관 기관과 함께 가스관을 차단하고 무너져 내린 도로 지하의 각종 배관 등 시설물도 점검 중이다.\n사고가 난 건물은 마두역 인근 8번 출구와 밀접한 건물로, 지하 3층, 지상 7층, 연면적 1만 2,730㎡ 규모 상가다.\n내부에는 음식점 9곳과 유흥업소 2곳, 미용실 5곳 등 총 18개의 점포가 입주해있는 것으로 전해졌다.",
+        "partNum": "P2",
+        "useType": 1,
+        "processType": "A",
+        "processPattern": "00",
+        "processLevel": "하",
+        "sentenceCount": 9,
+        "processSentencenum": 0,
+        "sentenceInfo": [
+            {
+                "sentenceNo": 1,
+                "sentenceContent": "경기 고양시 마두역 인근 건물의 붕괴 위험으로 내부 사람들과 인근 주민들이 긴급 대피했다.",
+                "sentenceSize": 50
+            },
+            {
+                "sentenceNo": 2,
+                "sentenceContent": "31일 오전 경기 고양시 마두역 인근 상가건물에서 지하 3층 주차장의 기둥이 파열되며 건물 인근 도로가 내려앉아 상가 입주민들이 긴급대피했다.",
+                "sentenceSize": 79
+            },
+            {
+                "sentenceNo": 3,
+                "sentenceContent": "인명피해는 발생하지 않았지만 건물 붕괴 위험성을 배제할 수 없어 유관 기관이 현장 상황을 점검 중이다.",
+                "sentenceSize": 57
+            },
+            {
+                "sentenceNo": 4,
+                "sentenceContent": "고양시 등에 따르면 이날 사고는 오전 11시 34분께 신고됐다.",
+                "sentenceSize": 35
+            },
+            {
+                "sentenceNo": 5,
+                "sentenceContent": "신고 접수 즉시 관리사무소 측에서 안내 방송을 해 상가 입주민 60여명이 긴급대피했다.",
+                "sentenceSize": 48
+            },
+            {
+                "sentenceNo": 6,
+                "sentenceContent": "경찰과 소방 당국은 현장에 출동해 미처 대피하지 못한 인원 여부를 파악하고 폴리스 라인을 만들어 현장 주변을 통제하고 있다.",
+                "sentenceSize": 69
+            },
+            {
+                "sentenceNo": 7,
+                "sentenceContent": "고양시는 한전, 지역난방공사 등 유관 기관과 함께 가스관을 차단하고 무너져 내린 도로 지하의 각종 배관 등 시설물도 점검 중이다.",
+                "sentenceSize": 72
+            },
+            {
+                "sentenceNo": 8,
+                "sentenceContent": "사고가 난 건물은 마두역 인근 8번 출구와 밀접한 건물로, 지하 3층, 지상 7층, 연면적 1만 2,730㎡ 규모 상가다.",
+                "sentenceSize": 68
+            },
+            {
+                "sentenceNo": 9,
+                "sentenceContent": "내부에는 음식점 9곳과 유흥업소 2곳, 미용실 5곳 등 총 18개의 점포가 입주해있는 것으로 전해졌다.",
+                "sentenceSize": 57
+            }
+        ]
+    }
+}

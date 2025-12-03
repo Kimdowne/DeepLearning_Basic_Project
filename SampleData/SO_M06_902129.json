@@ -1,0 +1,54 @@
+{
+    "sourceDataInfo": {
+        "newsID": "SO_M06_902129",
+        "newsCategory": "사회",
+        "newsSubcategory": "사회,행정·지자체,행정",
+        "newsTitle": "종로구, 구립예술단 합창·무용 단원 모집",
+        "newsSubTitle": "null",
+        "newsContent": "종로구는 2022년 신규 창단 예정인 종로구립예술단의 ‘어르신합창단’과 ‘궁중무용단’ 단원을 각각 모집한다고 30일 밝혔다.\n어르신합창단은 유급 단원과 일반 단원을 구분해 선발한다.\n유급 단원은 만 20세 이상의 반주자, 지도 단원, 소프라노, 바리톤 각 1명씩을 선발하며 지원 자격은 4년제 대학(반주자는 피아노, 소프라노 및 바리톤은 성악 전공에 한함) 졸업자 또는 동등 자격 취득자다.\n오는 1월 3일부터 14일까지 지원을 접수한다.\n일반 단원은 만 61세 이상 종로구민을 대상으로 오는 2월 4일까지 신청을 접수한다.\n종로구립궁중무용단은 관내 거주 만 20세 이상 구민을 대상으로 일반 단원 25명을 선발할 계획이다.\n지원은 1월 16일까지 접수한다.",
+        "partNum": "P2",
+        "useType": 1,
+        "processType": "A",
+        "processPattern": "00",
+        "processLevel": "하",
+        "sentenceCount": 7,
+        "processSentencenum": 0,
+        "sentenceInfo": [
+            {
+                "sentenceNo": 1,
+                "sentenceContent": "종로구는 2022년 신규 창단 예정인 종로구립예술단의 ‘어르신합창단’과 ‘궁중무용단’ 단원을 각각 모집한다고 30일 밝혔다.",
+                "sentenceSize": 69
+            },
+            {
+                "sentenceNo": 2,
+                "sentenceContent": "어르신합창단은 유급 단원과 일반 단원을 구분해 선발한다.",
+                "sentenceSize": 31
+            },
+            {
+                "sentenceNo": 3,
+                "sentenceContent": "유급 단원은 만 20세 이상의 반주자, 지도 단원, 소프라노, 바리톤 각 1명씩을 선발하며 지원 자격은 4년제 대학(반주자는 피아노, 소프라노 및 바리톤은 성악 전공에 한함) 졸업자 또는 동등 자격 취득자다.",
+                "sentenceSize": 116
+            },
+            {
+                "sentenceNo": 4,
+                "sentenceContent": "오는 1월 3일부터 14일까지 지원을 접수한다.",
+                "sentenceSize": 26
+            },
+            {
+                "sentenceNo": 5,
+                "sentenceContent": "일반 단원은 만 61세 이상 종로구민을 대상으로 오는 2월 4일까지 신청을 접수한다.",
+                "sentenceSize": 47
+            },
+            {
+                "sentenceNo": 6,
+                "sentenceContent": "종로구립궁중무용단은 관내 거주 만 20세 이상 구민을 대상으로 일반 단원 25명을 선발할 계획이다.",
+                "sentenceSize": 55
+            },
+            {
+                "sentenceNo": 7,
+                "sentenceContent": "지원은 1월 16일까지 접수한다.",
+                "sentenceSize": 18
+            }
+        ]
+    }
+}
