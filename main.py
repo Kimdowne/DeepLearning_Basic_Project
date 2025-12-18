@@ -1,88 +1,125 @@
 import os
+import glob
+import math
 import numpy as np
 import tensorflow as tf
-import matplotlib.pyplot as plt
-from pathlib import Path
-
-# 기존 파일에서 데이터 로더 함수 가져오기 (가정)
-# from json2array import extract_value 
+import json
 from kobert_tokenizer import KoBERTTokenizer
 
-# === [설정] ===
-DATA_PATH = "SampleData" # 데이터 경로
-BATCH_SIZE = 2
-EPOCHS = 5
+# ==============================================================================
+# [설정] 환경 변수 및 GPU 설정
+# ==============================================================================
+
+# 1. 토크나이저 병렬 처리 비활성화 (필수: 교착 상태 방지)
+os.environ["TOKENIZERS_PARALLELISM"] = "false"
+
+# 2. GPU 메모리 동적 할당 (OOM 방지)
+gpus = tf.config.list_physical_devices('GPU')
+if gpus:
+    try:
+        for gpu in gpus:
+            tf.config.experimental.set_memory_growth(gpu, True)
+        print(f"✅ GPU 가속 활성화됨: {len(gpus)}개의 GPU 감지됨")
+    except RuntimeError as e:
+        print(f"GPU 설정 오류: {e}")
+else:
+    print("⚠️ GPU를 찾을 수 없습니다. CPU로 학습합니다.")
+
+# ==============================================================================
+
+# === [파라미터 설정] ===
+BATCH_SIZE = 32  
+EPOCHS = 100
 LEARNING_RATE = 0.001
 MAX_LEN = 64
 
-import os
-import json
+# === [1. 데이터 제너레이터] ===
+def data_generator(file_paths):
+    for file_path in file_paths:
+        try:
+            with open(file_path, 'r', encoding='utf-8') as f:
+                data = json.load(f)
+                
+                info = data.get("sourceDataInfo", {})
+                title = info.get("newsTitle", "")
+                
+                # 본문 앞 5문장 추출
+                sentences = info.get("sentenceInfo", [])
+                content_list = [item.get("sentenceContent", "") for item in sentences[:5]]
+                body = " ".join(content_list)
+                
+                # 라벨
+                label_val = info.get("useType", 0)
+                label = float(label_val)
+                
+                yield title, body, label
 
-def extract_value(path):
+        except Exception as e:
+            continue
 
-    newsTitles, newsContents, useTypes = [], [], []
+# === [2. 데이터셋 파이프라인 생성 함수] ===
+def create_dataset(data_path, tokenizer, max_len, batch_size):
+    # 1. 파일 탐색 (재귀적)
+    print(f"📂 경로 탐색 중: {data_path}")
+    search_pattern = os.path.join(data_path, "**", "*.json")
+    all_files = glob.glob(search_pattern, recursive=True)
     
-    # 디렉토리가 실제로 존재하는지 확인
-    if not os.path.exists(path):
-        print(f"오류: '{path}' 경로를 찾을 수 없습니다.")
-        return
+    file_count = len(all_files)
+    print(f"   ㄴ 발견된 파일 수: {file_count}개")
+    
+    if file_count == 0:
+        return None, 0
 
-    # 디렉토리 내의 파일 목록을 순회
-    for filename in os.listdir(path):
+    # 2. 제너레이터 연결
+    def gen():
+        yield from data_generator(all_files)
 
-        # .json 확인
-        if filename.endswith(".json"):
-            file_path = os.path.join(path, filename)
+    dataset = tf.data.Dataset.from_generator(
+        gen,
+        output_signature=(
+            tf.TensorSpec(shape=(), dtype=tf.string),
+            tf.TensorSpec(shape=(), dtype=tf.string),
+            tf.TensorSpec(shape=(), dtype=tf.float32)
+        )
+    )
+
+    # 3. 토크나이징 및 매핑
+    def tokenize_map(title, body, label):
+        def py_tokenize(t, b):
+            t_str = t.numpy().decode('utf-8')
+            b_str = b.numpy().decode('utf-8')
             
-            try:
-                # 파일 열기
-                with open(file_path, 'r', encoding='utf-8') as f:
-                    _data = json.load(f)
+            t_enc = tokenizer.encode_plus(t_str, max_length=max_len, padding='max_length', truncation=True)
+            b_enc = tokenizer.encode_plus(b_str, max_length=max_len, padding='max_length', truncation=True)
+            
+            return np.array(t_enc['input_ids'], dtype=np.int32), np.array(b_enc['input_ids'], dtype=np.int32)
 
-                    newsTitles.append(_data["sourceDataInfo"]["newsTitle"])
+        title_ids, body_ids = tf.py_function(py_tokenize, [title, body], [tf.int32, tf.int32])
+        
+        title_ids.set_shape([max_len])
+        body_ids.set_shape([max_len])
+        
+        return ({"title_input": title_ids, "body_input": body_ids}, label)
 
-                    _content_list = [item.get("sentenceContent", "") for item in _data["sourceDataInfo"]["sentenceInfo"][:5]]
-                    newsContents.append(" ".join(_content_list))
-                    
-                    useTypes.append(_data["sourceDataInfo"]["useType"])
-
-                    
-                    
-            except json.JSONDecodeError:
-                print(f"오류: {filename} 파일은 올바른 JSON 형식이 아닙니다.")
-            except Exception as e:
-                print(f"오류: {filename} 처리 중 문제 발생 - {e}")
-
-
-    return newsTitles, newsContents, useTypes
-
-def preprocess_data(titles, bodies, labels, tokenizer, max_len):
-    title_ids = []
-    body_ids = []
+    # 병렬 처리 설정
+    dataset = dataset.map(tokenize_map, num_parallel_calls=tf.data.AUTOTUNE)
+    dataset = dataset.batch(batch_size)
+    dataset = dataset.prefetch(tf.data.AUTOTUNE)
     
-    for t, b in zip(titles, bodies):
-        t_enc = tokenizer.encode_plus(t, add_special_tokens=True, max_length=max_len, 
-                                      padding='max_length', truncation=True)
-        b_enc = tokenizer.encode_plus(b, add_special_tokens=True, max_length=max_len, 
-                                      padding='max_length', truncation=True)
-        title_ids.append(t_enc['input_ids'])
-        body_ids.append(b_enc['input_ids'])
+    return dataset, file_count
 
-    return (np.array(title_ids, dtype=np.int32), 
-            np.array(body_ids, dtype=np.int32), 
-            np.array(labels, dtype=np.float32))
-
+# === [3. 모델 구조 정의 (Siamese GRU)] ===
 def build_siamese_gru_model(vocab_size, max_len, embed_dim=128, hidden_dim=64):
     input_title = tf.keras.Input(shape=(max_len,), name='title_input')
     input_body = tf.keras.Input(shape=(max_len,), name='body_input')
 
-    embedding_layer = tf.keras.layers.Embedding(vocab_size, embed_dim)
+    embedding_layer = tf.keras.layers.Embedding(vocab_size, embed_dim, mask_zero=True)
     gru_layer = tf.keras.layers.GRU(hidden_dim)
 
     vec_title = gru_layer(embedding_layer(input_title))
     vec_body = gru_layer(embedding_layer(input_body))
 
-    # 차분 층
+    # 차이 벡터 계산 (L1 Distance)
     diff = tf.keras.layers.Lambda(lambda x: tf.abs(x[0] - x[1]))([vec_title, vec_body])
 
     x = tf.keras.layers.Dense(32, activation='relu')(diff)
@@ -90,52 +127,90 @@ def build_siamese_gru_model(vocab_size, max_len, embed_dim=128, hidden_dim=64):
 
     return tf.keras.Model(inputs=[input_title, input_body], outputs=output)
 
-
+# === [4. 메인 실행 블록] ===
 if __name__ == "__main__":
-
-    target_path = Path("SampleData").resolve()
-    raw_titles, raw_contents, raw_labels = extract_value(target_path)
     
-    # 데이터 전처리 (Numpy 변환)
-    tokenizer = KoBERTTokenizer.from_pretrained("skt/kobert-base-v1")
-    X_title, X_body, y = preprocess_data(raw_titles, raw_contents, raw_labels, tokenizer, MAX_LEN)
-    train_X = [X_title, X_body]
+    print("\n=== 프로그램 시작 ===")
+    
+    # 1. 경로 설정
+    BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+    TRAIN_PATH = os.path.join(BASE_DIR, "DataSet", "train")
+    TEST_PATH = os.path.join(BASE_DIR, "DataSet", "test")
 
-    # 모델 로드
+    # 2. 토크나이저 로드
+    try:
+        tokenizer = KoBERTTokenizer.from_pretrained("skt/kobert-base-v1")
+    except Exception as e:
+        print(f"❌ 토크나이저 로드 실패: {e}")
+        exit()
+
+    # 3. [학습] 데이터셋 생성
+    print("\n--- [Train] 데이터셋 준비 ---")
+    if not os.path.exists(TRAIN_PATH):
+        print(f"❌ 학습 데이터 폴더 없음: {TRAIN_PATH}")
+        exit()
+        
+    train_ds, train_files = create_dataset(TRAIN_PATH, tokenizer, MAX_LEN, BATCH_SIZE)
+    
+    if train_ds is None:
+        print("❌ 학습 데이터가 없습니다.")
+        exit()
+
+    train_steps = math.ceil(train_files / BATCH_SIZE)
+    print(f"   ㄴ 학습 스텝 수: {train_steps} (총 {train_files}개)")
+
+    # 4. 모델 생성 및 컴파일
+    print("\n--- 모델 빌드 ---")
     model = build_siamese_gru_model(vocab_size=tokenizer.vocab_size, max_len=MAX_LEN)
     
-    # 모델 컴파일
     model.compile(
         optimizer=tf.keras.optimizers.Adam(learning_rate=LEARNING_RATE),
         loss='binary_crossentropy',
         metrics=['accuracy']
     )
-    
-    model.summary()
 
-    # 5. 학습 진행 (History 객체에 기록 저장)
+    # 5. 모델 학습
     print("\n=== 학습 시작 ===")
-    history = model.fit(
-        x=train_X,  # 입력이 2개이므로 리스트로 전달
-        y=y,
-        batch_size=BATCH_SIZE,
-        epochs=EPOCHS,
-        validation_split=0.2, # 검증 데이터 활용
-        verbose=1
-    )
-    print("=== 학습 완료 ===")
+    try:
+        history = model.fit(
+            train_ds,
+            epochs=EPOCHS,
+            steps_per_epoch=train_steps,
+            verbose=1
+        )
+        print("=== 학습 완료 ===")
+        
+        # [수정됨] .keras 포맷으로 저장 (Warning 해결)
+        save_name = "siamese_gru_model.keras"
+        model.save(save_name)
+        print(f"💾 모델 저장 완료: {save_name}")
+        
+    except KeyboardInterrupt:
+        print("\n⛔ 사용자에 의해 학습이 중단되었습니다.")
+        exit()
+    except Exception as e:
+        print(f"\n❌ 학습 중 오류 발생: {e}")
+        exit()
 
-    # 테스트 (예측)
-    print("\n=== 테스트 수행 ===")
-    test_title_raw = ["충격! 로또 1등 당첨 비결 공개"]
-    test_body_raw = ["로또는 독립시행이므로 비결은 없습니다. 운에 맡기세요."]
+    # 6. [평가] 테스트 데이터셋으로 성능 평가
+    print("\n=== 모델 평가 (Test) ===")
     
-    # 테스트 데이터 전처리
-    X_test_t, X_test_b, _ = preprocess_data(test_title_raw, test_body_raw, [0], tokenizer, MAX_LEN)
-    
-    # 예측 수행
-    prediction = model.predict([X_test_t, X_test_b])
-    score = prediction[0][0]
-    result = "낚시성 기사(불일치)" if score > 0.5 else "정상 기사(일치)"
-    
-    print(f"\n[테스트 결과]\n제목: {test_title_raw[0]}\n본문: {test_body_raw[0]}\n\n판정: {result} (점수: {score:.4f})")
+    if not os.path.exists(TEST_PATH):
+        print(f"⚠️ 테스트 폴더가 없어 평가를 건너뜁니다: {TEST_PATH}")
+    else:
+        print(f"--- [Test] 데이터셋 준비 ---")
+        test_ds, test_files = create_dataset(TEST_PATH, tokenizer, MAX_LEN, BATCH_SIZE)
+        
+        if test_ds is not None:
+            test_steps = math.ceil(test_files / BATCH_SIZE)
+            print(f"   ㄴ 테스트 스텝 수: {test_steps} (총 {test_files}개)")
+            
+            print("\n--- 평가 진행 중... ---")
+            # evaluate 함수로 손실과 정확도 계산
+            test_loss, test_acc = model.evaluate(test_ds, steps=test_steps, verbose=1)
+            
+            print("\n📊 [최종 평가 결과]")
+            print(f"   - Test Loss    : {test_loss:.4f}")
+            print(f"   - Test Accuracy: {test_acc:.4f} ({test_acc*100:.2f}%)")
+        else:
+            print("⚠️ 테스트 데이터 파일(.json)을 찾을 수 없습니다.")
